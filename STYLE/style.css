@@ -154,6 +154,7 @@ form {
 .add-ons {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 }
 .add-item {
   display: flex;
@@ -163,8 +164,26 @@ form {
   margin: 10px 0px;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
+  width: 450px;
   padding: 10px;
+}
+.add-item button {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 5px;
+  margin: 0px 15px;
+}
+.one {
+  flex-basis: 70%;
+}
+/* for purplish blue */
+.pblue {
+  color: hsl(243, 100%, 62%);
+}
+
+/* for marine blue */
+.mblue {
+  color: hsl(213, 96%, 18%);
 }
 @media (max-width: 450px) {
   body {
