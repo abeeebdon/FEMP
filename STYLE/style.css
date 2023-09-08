@@ -236,7 +236,7 @@ form {
 
 @media (max-width: 600px) {
   body {
-    height: 100vh;
+    height: 90vh;
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -247,7 +247,7 @@ form {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 90vh;
     position: relative;
   }
   .container {
@@ -262,6 +262,8 @@ form {
     justify-content: center;
     align-items: center;
     background-image: url('../assets/images/bg-sidebar-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .list {
@@ -300,6 +302,6 @@ form {
     position: fixed;
     background-color: white;
     right: 5%;
-    bottom: 10%;
+    bottom: 20%;
   }
 }
