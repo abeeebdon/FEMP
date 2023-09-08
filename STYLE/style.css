@@ -234,7 +234,7 @@ form {
   margin: 0 auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body {
     height: 100vh;
     padding: 0;
