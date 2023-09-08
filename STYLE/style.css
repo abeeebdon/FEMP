@@ -285,13 +285,18 @@ form {
   .list-content-link a {
     display: inline;
   }
+  .list-content-link a:hover {
+    color: black;
+    background-color: hsl(217, 100%, 97%);
+  }
+
   .wrapper {
     width: 90vw;
-    margin: 0;
+    margin: 10px;
     padding: 5px;
     margin: 0 auto;
     position: absolute;
-    top: 16%;
+    top: 15%;
     left: 5%;
     right: 5%;
     background-color: white;
