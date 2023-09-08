@@ -1,5 +1,7 @@
 import side from './scripts/sidebar.js'
 
+// ------------- Showing the side with javascript-----------
+
 side.map((linked) => {
   const container = document.querySelector('.container')
   const lis = document.createElement('div')
@@ -18,7 +20,7 @@ side.map((linked) => {
   `
 })
 
-// ADD-ONS javascript
+//------------------ ADD-ONS javascript
 const checkBox = document.querySelectorAll('.check')
 checkBox.forEach((check) => {
   check.addEventListener('click', changeBG)
@@ -27,13 +29,18 @@ checkBox.forEach((check) => {
   }
 })
 
+// select plan ends here
+
+// ========================
+// The Button========
+
 // select plan
 
 const planItem = document.querySelectorAll('.plan-item')
 const selectPlan = document.getElementById('left')
-const changeMOnthly = document.getElementById('cp1')
+const changeMonthly = document.getElementById('cp1')
 const changeYearly = document.getElementById('cp2')
-changeMOnthly.addEventListener('click', changePlan)
+changeMonthly.addEventListener('click', changePlan)
 changeYearly.addEventListener('click', changePlan2)
 
 function changePlan() {
@@ -46,17 +53,17 @@ function changePlan() {
     const plan = document.querySelector('.plan')
     plan.appendChild(plan1)
     plan1.innerHTML = `
-<div class="plan-item">
+  <div class="plan-item">
   <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
   <h3>${level}</h3>
   <p>${paragraph}</p>
-</div>
-`
+  </div>`
     planItem.forEach((planI) => {
       planI.style.display = 'none'
     })
   })
 }
+
 function changePlan2() {
   selectPlan.style.paddingLeft = '40px'
   selectPlan.style.paddingRight = '0px'
@@ -90,5 +97,3 @@ const Yplan = [
   { id: 2, level: 'Advanced', paragraph: '$120 / yr' },
   { id: 3, level: 'Pro', paragraph: '$150 / yr' },
 ]
-
-// select plan ends here

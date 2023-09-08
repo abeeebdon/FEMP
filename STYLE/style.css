@@ -197,8 +197,22 @@ form {
 .mblue {
   color: hsl(213, 96%, 18%);
 }
-.relative {
-  position: relative;
+.sum-content {
+  margin-top: 30px;
+  width: 100%;
+}
+.sum {
+  width: 450px;
+  padding: 10px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.sum-content div {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 10px;
 }
 
 .thanks {
@@ -219,6 +233,7 @@ form {
   text-align: center;
   margin: 0 auto;
 }
+
 @media (max-width: 450px) {
   body {
     height: 100vh;
@@ -235,26 +250,29 @@ form {
     height: 100vh;
     position: relative;
   }
-  .list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
   .container {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-left: 70px;
+    padding-right: 60px;
     border-radius: 0px;
     width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('../assets/images/bg-sidebar-mobile.svg');
   }
+
   .list {
-    width: 40vw;
+    flex-basis: 10%;
     margin: 0 auto;
+    width: 70vw;
+    font-size: 1.5rem;
+    padding: 0px 20px;
   }
-  .list {
-    flex-direction: row;
-    justify-content: space-around;
+  .list-content {
+    display: inline-flex;
   }
   .list-content-text {
     display: none;
@@ -271,15 +289,13 @@ form {
     padding: 5px;
     margin: 0 auto;
     position: absolute;
-    top: 15%;
+    top: 16%;
     left: 5%;
     right: 5%;
     background-color: white;
     border-radius: 10px;
   }
-  .btn {
-    position: relative;
-  }
+
   .btn {
     position: fixed;
     background-color: white;
