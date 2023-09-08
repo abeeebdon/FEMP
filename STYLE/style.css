@@ -309,6 +309,10 @@ form {
     right: 5%;
     bottom: 20%;
   }
+  #go {
+    position: fixed;
+    left: 5%;
+  }
   .plan {
     display: flex;
     flex-direction: column;
